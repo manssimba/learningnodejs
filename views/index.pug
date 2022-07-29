@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    title #{user.name}'s Dashboard
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  body.has-navbar-fixed-bottom
+    include app.js
+    if notification.show
+      div.notification
+        button.delete.mt-3.mr-3
+        p #{notification.message}
+    include ./templates/navbar.pug
+    include ./templates/login.pug

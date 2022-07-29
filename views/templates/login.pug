@@ -1,0 +1,13 @@
+div.modal(id="login-modal")
+  div.modal-background
+  div.modal-content
+    div.card
+      header.card-header
+        p.card-header-title Login
+      div.card-content
+        form(action="/login",method="post")
+          div.field
+            label.label email
+            div.control
+              input.input(type="email", name="email")
+  <button class="modal-close is-large" aria-label="close"></button>
